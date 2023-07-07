@@ -11,7 +11,7 @@ try {
     echo $e->getMessage();
 }
 
-$hostToRoot = 'http://localhost/UNIKOM/MetodePenelitian/AplikasiCuaca2/';
+$hostToRoot = 'http://localhost/UNIKOM/MetodePenelitian/AplikasiCuaca/';
 $title = 'ReD | MetPen';
 $version = 'Beta Build 1.0';
 
