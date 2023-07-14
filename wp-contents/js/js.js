@@ -326,33 +326,49 @@ function getCuaca(idWilayah) {
         var timestamp = Date.now()/1000;  
         var datetime = new Date(timestamp * 1000);
         let isiCuaca;
-        // moment(data[n].jamCuaca).format('LLL')
+
+        const str = new Date().toLocaleString('en-US', { timeZone: 'Asia/Jakarta' });
+        console.log(str);
         
 
         // setelah dapat jarak,  ambil 5 terdekat
         for (n = 0; n < jml; n++) {
             $(".sekarang").html('<img src="wp-contents/icons/'+
-            data[n].kodeCuaca+
+            data[2].kodeCuaca+
             '.svg" class="img-fluid" width="45">')
+            items.push(`
+                        <div class="col-4">
+                            <div class="bg-white dark__bg-1100 p-3 h-100"><img class="img-fluid" src="wp-contents/icons/${data[n].kodeCuaca}.svg" alt="" width="100" />
+                            <br><br>
+                            <h5 class="mb-1">${data[n].cuaca}
+                            </h5>
+                            <h6 class="">${data[n].tempC}<sup>o</sup>C</h6>
+                            <h6 class="">${data[n].jamCuaca}</h6>
+                            </div>
+                        </div>
+            `)
+
+            $('.tempC').html(`${data[2].tempC}<sup>o</sup>C`);
+            $('.cuacaDetail').html(`${data[2].cuaca}`);
+            $('.tglHari').html(datetime.toTimeString(data[2].jamCuaca));
             // if(data[n].kodeCuaca === cuacaKode.kode){
             //     console.log(cuacaKode.isi)
             //     $('.isiPertama').html(cuacaKode.isi);
             // }
 
             for (let i = 0; i < cuacaKode.length; i++) {
-                if (cuacaKode[i].kode == data[n].kodeCuaca) {
+                if (cuacaKode[i].kode == data[2].kodeCuaca) {
                     isiCuaca = cuacaKode[i].isi;
-                  break;
+                    break;
                 }
               }
 
             $('.isiPertama').html(isiCuaca);
-            $('.tempC').html(`${data[n].tempC}<sup>o</sup>C`);
-            $('.cuacaDetail').html(`${data[n].cuaca}`);
-            $('.tglHari').html(datetime.toTimeString(data[n].jamCuaca));
 
-            if (n < 4) break
+            if (n > 4) break
         };
+            
+        $('.bungkus').html(items.join(""));
 
         // setelah dapat jarak,  ambil 5 terdekat
         // for (n = 0; n < jml; n++) {

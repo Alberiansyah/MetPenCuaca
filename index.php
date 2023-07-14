@@ -40,6 +40,8 @@ require __DIR__ . '/layouts/resources.php';
           <div class="col-lg-4 ps-lg-2">
             <div class="card mb-3">
               <div class="card-header bg-light">
+                <div class="bg-holder bg-card" style="background-image:url(wp-contents/template/assets/img/icons/spot-illustrations/corner-2.png);">
+                </div>
                 <h5 class="mb-0">Saat ini</h5>
               </div>
               <div class="card-body text-justify">
@@ -63,15 +65,15 @@ require __DIR__ . '/layouts/resources.php';
               </div>
             </div>
             <div class="card-body bg-light px-1 py-0">
-              <div class="row g-0 text-center fs--1">
-                <div class="col-12">
+              <div class="row g-0 text-center fs--1 bungkus">
+                <!-- <div class="col-12">
                   <div class=" bg-white dark__bg-1100 p-3 h-100"><a href="../../pages/user/profile.html"><img class="img-thumbnail img-fluid rounded-circle mb-3 shadow-sm" src="../../assets/img/team/1.jpg" alt="" width="100" /></a>
                     <h6 class="mb-1"><a href="../../pages/user/profile.html">Emilia Clarke</a>
                     </h6>
                     <p class="fs--2 mb-1"><a class="text-700" href="#!">Technext limited</a></p>
                   </div>
-                </div>
-                <div class="col-12">
+                </div> -->
+                <!-- <div class="col-12">
                   <div class="bg-white dark__bg-1100 p-3 h-100"><a href="../../pages/user/profile.html"><img class="img-thumbnail img-fluid rounded-circle mb-3 shadow-sm" src="../../assets/img/team/2.jpg" alt="" width="100" /></a>
                     <h6 class="mb-1"><a href="../../pages/user/profile.html">Kit Harington</a>
                     </h6>
@@ -112,8 +114,7 @@ require __DIR__ . '/layouts/resources.php';
                     </h6>
                     <p class="fs--2 mb-1"><a class="text-700" href="#!">Brain Trust</a></p>
                   </div>
-                </div>
-
+                </div> -->
               </div>
             </div>
           </div>
