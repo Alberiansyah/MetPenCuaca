@@ -12,7 +12,7 @@ try {
 }
 
 $hostToRoot = 'http://localhost/UNIKOM/MetodePenelitian/AplikasiCuaca/';
-$title = 'ReD | MetPen';
+$title = 'MetPen | Aplikasi Cuaca';
 $version = 'Beta Build 1.0';
 
 session_start();

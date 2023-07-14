@@ -29,7 +29,6 @@
   <script src="<?= $hostToRoot ?>wp-contents/vendors/list.js/list.min.js"></script>
   <script src="<?= $hostToRoot ?>wp-contents/template/assets/js/theme.js"></script>
   <script src="<?= $hostToRoot ?>wp-contents/js/js.js?v=<?= time() ?>"></script>
-  <script src="<?= $hostToRoot ?>wp-contents/js/coba.js?v=<?= time() ?>"></script>
   </body>
 
   </html>
